@@ -1,0 +1,130 @@
+:root{
+    --vermelho:#e50914;
+    --preto:#141414;
+}
+body{
+    background: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color:white;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Base*/
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 15px;
+}
+header  .logo{
+    margin: 5px 0px 5px 20px;
+    color: var(--vermelho);
+    font-family:  'arial black', times;
+    font-size: 40px;
+}
+header nav{
+    margin-right: 10px;
+}
+header nav a{
+    text-decoration:none;
+    color:#AAA;
+    margin-right: 25px;
+}
+
+
+header nav a:hover{
+    color:#fff;
+}
+/* filmes principal*/
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url("/img/capatheoffice.jpg");
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 40px;
+    margin-top: 10px;
+    font-style: bold;
+    font-size: 17px;
+}
+
+.titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: 1s ease all;
+    margin-bottom: 50px;
+
+}
+
+.botao:hover{
+    background-color: white;
+    color: #141414;
+}
+.botao i{
+    margin-right: 8px;
+}
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+
+
+}
+.descricao{
+    width: 50%;
+}
+.filme-principal .container{
+    margin-left: 50px;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: -10px;
+}
+.carrosel-filmes .topicos{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin-bottom: 8px;
+    margin-top: 10px;
+    margin-right: 10px;
+    color:#cfc9c9;
+}
+.carrosel-filmes a{
+    color:#cfc9c9;
+    text-decoration: none;
+    margin-right: 10px;
+    
+}
+.carrosel-filmes a:hover{
+    color:#e50914;
+    text-decoration: none;
+}
+.carrosel-filmes .container{
+    display:flex;
+    justify-content:space-between;
+}
